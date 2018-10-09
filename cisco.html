@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>The Minimal React Webpack Babel Setup</title>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="HDFC icon.png">
+  <header></header>
+  <link rel="stylesheet" type="text/css" href="cisco.css">
+</head>
+
+<body>
+  <div class="container">
+    <button class="btn">
+      <a class="logout" href=/accounts/logout/>Logout</a>
+    </button>
+    <div class="container-blue-first"></div>
+    <div class="container-white">
+
+      <img class="myImage" src="hdfcLogo.png" alt="HDFC Life">
+      <h1 class="heading">New Customer Journey Chatbot PoC</h1>
+    </div>
+    <div class="container-blue-second"></div>
+    <div class="container-red"></div>
+  </div>
+
+  <div id="app"></div>
+
+  <script src="https://suite.nimoy.in/api/static/cwidget.js"></script>
+  <script>
+    Suite.init({
+      botId: "24",
+      botName: "Nimoy",
+      botUrl: "https://suite.nimoy.in/",
+      botType: "intent",
+    });
+  </script>
+</body>
+
+</html>
